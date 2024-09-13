@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio do Restaurante</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./scripts.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/scripts/login.html">
+</head>
+<body>
+    <header>
+        <h1>Palhoça Sereia</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="./scripts/login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h2>Bem-vindo ao nosso restaurante!</h2>
+        <p>A Melhor Opção Da Praia Em Frutos Do Mar</p>
+    </section>
+    <section id="cardapio">
+        <h2>Nosso Cardápio</h2>
+        <div class="tab">
+            <button class="tablinks" onclick="openCategory(event, 'tira-gosto')">Tira Gosto</button>
+            <button class="tablinks" onclick="openCategory(event, 'bebidas')">Bebidas</button>
+            <button class="tablinks" onclick="openCategory(event, 'aperitivos')">Aperitivos</button>
+            <button class="tablinks" onclick="openCategory(event, 'guarnicoes')">Guarnições</button>
+            <button class="tablinks" onclick="openCategory(event, 'sucos')">Sucos</button>
+            <button class="tablinks" onclick="openCategory(event, 'whiskys-importados')">Whiskys Importados</button>
+            <button class="tablinks" onclick="openCategory(event, 'refeicoes-de-peixe')">Refeições De Peixe</button>
+            <button class="tablinks" onclick="openCategory(event, 'mariscos')">Mariscos</button>
+            <button class="tablinks" onclick="openCategory(event, 'carnes')">Carnes</button>
+        </div>
+        <div id="tira-gosto" class="tabcontent">
+            <div id="tira-gosto-items"></div>
+        </div>
+        <div id="bebidas" class="tabcontent">
+            <div id="bebidas-items"></div>
+        </div>
+        <div id="aperitivos" class="tabcontent">
+            <div id="aperitivos-items"></div>
+        </div>
+        <div id="guarnicoes" class="tabcontent">
+            <div id="guarnicoes-items"></div>
+        </div>
+        <div id="sucos" class="tabcontent">
+            <div id="sucos-items"></div>
+        </div>
+        <div id="whiskys-importados" class="tabcontent">
+            <div id="whiskys-importados-items"></div>
+        </div>
+        <div id="refeicoes-de-peixe" class="tabcontent">
+            <div id="refeicoes-de-peixe-items"></div>
+        </div>
+        <div id="mariscos" class="tabcontent">
+            <div id="mariscos-items"></div>
+        </div>
+        <div id="carnes" class="tabcontent">
+            <div id="carnes-items"></div>
+        </div>
+    </section>
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Somos um restaurante dedicado a oferecer a melhor experiência culinária à beira-mar.</p>
+    </section>
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Email: contato@restaurantepraia.com</p>
+        <p>Telefone: (21) 1234-5678</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Restaurante na Praia. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

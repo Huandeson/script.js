@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administração - Palhoça Sereia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo Palhoça Sereia">
+            <h1>Palhoça Sereia</h1>
+        </div>
+        <nav>
+            <a href="index.html">Cardápio</a>
+            <a href="admin.html">Administração</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Administração do Cardápio</h2>
+        <form id="admin-form">
+            <label for="item-name">Nome do Item:</label>
+            <input type="text" id="item-name" name="item-name" required>
+
+            <label for="item-description">Descrição:</label>
+            <textarea id="item-description" name="item-description" required></textarea>
+
+            <label for="item-price">Preço:</label>
+            <input type="text" id="item-price" name="item-price" required>
+
+            <label for="item-image">URL da Imagem:</label>
+            <input type="text" id="item-image" name="item-image" required>
+
+            <button type="button" onclick="addItem()">Adicionar Item</button>
+        </form>
+        <div id="admin-menu">
+            <!-- Itens serão atualizados em tempo real aqui -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Palhoça Sereia - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="admin.js"></script>
+</body>
+</html>
